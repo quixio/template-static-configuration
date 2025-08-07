@@ -25,6 +25,10 @@ variables:
     description: The database name for the PostgreSQL instance
     defaultValue: quix
     required: true
+  - name: CONFIG_UI_AUTH_TOKEN
+    inputType: Secret
+    description: The auth token to access the Config UI.
+    required: true
 dockerfile: dockerfile
 runEntryPoint: main.py
 defaultFile: main.py

@@ -313,6 +313,11 @@ deployments:
         description: The database name for the PostgreSQL instance
         required: true
         value: quix
+      - name: CONFIG_UI_AUTH_TOKEN
+        inputType: Secret
+        description: The auth token to access the Config UI.
+        required: true
+        secretKey: config_ui_auth_token
   - name: HTTP Config Processor
     application: http-config-processor
     version: latest

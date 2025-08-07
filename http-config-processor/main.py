@@ -36,7 +36,7 @@ def config_apply(row: dict) -> dict:
 def main():
     # App setup
     app = Application(
-        consumer_group="http_data_normalization2",
+        consumer_group="http_data_normalization",
         auto_create_topics=True,
         auto_offset_reset="earliest"
     )

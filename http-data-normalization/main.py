@@ -32,7 +32,7 @@ def window_finalizer(finalized_window: dict):
 def main():
     # Setup necessary objects
     app = Application(
-        consumer_group="http_data_normalization2",
+        consumer_group="http_data_normalization",
         auto_create_topics=True,
         auto_offset_reset="earliest"
     )

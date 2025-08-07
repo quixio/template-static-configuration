@@ -13,9 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose the port that Streamlit uses
 EXPOSE 80
 
-# Copy app files
-COPY main.py db_helpers.py entrypoint.sh ./
-
 # Make entrypoint executable
 RUN chmod +x entrypoint.sh
 

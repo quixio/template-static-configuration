@@ -131,7 +131,7 @@ This aggregation is done using a Quix Streams `tumbling_window` operation, found
 
 ### Applying Printer Config
 
-Using the `Configuration Frontend`, you can set what values will be used by the 
+Using the `Machine Config UI`, you can set what values will be used by the 
 `HTTP Config Processor`.
 
 By default, these will be the settings:

@@ -9,7 +9,7 @@ def get_db_conn():
     return db_conn()
 
 
-st.title("📊 HTTP Config Processor Viewer and Editor")
+st.title("📊 Machine Config Editor")
 
 if "authenticated" not in st.session_state:
     st.session_state["authenticated"] = False

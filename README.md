@@ -1,8 +1,8 @@
 # HTTP Ingestion with DB Configuration Project Template
 
-This example project `demonstrates` how to receive data from an HTTP endpoint, 
-do some normalizations followed by applying a configuration set by a frontend
-application, and then publish the augmented data to an InfluxDB2 database.
+This example project demonstrates how to receive data from an HTTP endpoint, 
+do some normalizations, followed by applying a DB-based Configuration set through a UI,
+and then publish the augmented data to an InfluxDB2 database.
 
 It also includes visualization/dashboard examples using Grafana (which queries InfluxDB2).
 
@@ -79,7 +79,7 @@ require defining upon deployment of this project (see [setting secrets](#setting
 
 ### Using the Printer Configuration UI
 
-To learn how to adjust a printer config via the Printer Configuration UI, see [applying a printer config](#applying-printer-config).
+To learn how to adjust a printer config via the Printer Config UI, see [applying a printer config](#applying-a-printer-config).
 
 
 
@@ -129,19 +129,32 @@ This aggregation is done using a Quix Streams `tumbling_window` operation, found
 `HTTP Data Normalization` application.
 
 
-### Applying Printer Config
+### Applying a Printer Config
 
-Using the `Machine Config UI`, you can set what values will be used by the 
+Using the `Machine Config UI` service, you can set what values will be used by the 
 `HTTP Config Processor`.
+
+#### Accessing the Machine Config UI
+
+Click on the blue link to authenticate with the UI.
+
+![img](images/frontend_link.png)
+
+The token should be what `config_ui_auth_token` was set to during the initial template sync.
+
+![img](images/frontend_login.png)
+
+#### Using the Machine Config UI
 
 By default, these will be the settings:
 
 ![img](images/config_frontend.png)
 
-They can be changed by going to the frontend and adjusting the values.
+They can be added or changed by going to the UI and adjusting the values.
 
 The `HTTP Config Processor` will use these to convert the names of the fields using the
 mapping specified here, and also apply the scalar to the given respective field.
+
 
 
 ### InfluxDB2 Data

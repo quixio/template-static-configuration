@@ -77,7 +77,7 @@ def main():
         auto_offset_reset="earliest"
     )
     http_sink = HttpSink()
-    input_topic = app.topic(name=os.environ["input"])
+    input_topic = app.topic(name=os.environ["input"], key_deserializer="str")
     sdf = app.dataframe(topic=input_topic)
 
     # Do SDF operations/transformations

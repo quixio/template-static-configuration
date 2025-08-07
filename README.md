@@ -165,9 +165,24 @@ These events are then pushed to InfluxDB2 to database `my_bucket` under measurem
 
 There is a simple Grafana dashboard included in the project.
 
-You can select which column to view (`sensor_1`, `sensor_2`) for the given graphs.
+### Accessing Grafana
+
+Click on the blue link to log in to Grafana.
+
+![img](images/grafana_link.png)
+
+- **username**: `admin`
+- **password**: whatever value `grafana_password` was set to when
+  first setting up the template.
+
+![img](images/grafana_login.png)
+
+
+### Using Grafana
 
 There is a simple Time Series graph and mean value gauge, each based on the 
 selected time window.
 
 ![img](images/grafana.png)
+
+You can select which column to view (`sensor_1`, `sensor_2`) for the given graphs.

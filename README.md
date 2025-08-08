@@ -198,8 +198,11 @@ Click on the blue link to log in to Grafana.
 
 ![img](images/grafana_login.png)
 
+Then, navigate to the dashboards tab:
 
-### Using Grafana
+![img](images/grafana_home.png)
+
+### Exploring the Dashboard
 
 There is a simple Time Series graph and mean value gauge, each based on the 
 selected time window.

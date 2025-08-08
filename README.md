@@ -44,7 +44,7 @@ configurations, so they do not need to be manually entered.
 ### Service Startup Delays and Application Restarts
 
 Upon first sync, it is normal that some applications may restart/error a few times while 
-some of its dependancies are still starting up.
+some of its dependencies are still starting up.
 
 Applications should not need to restart more than 3-5 times before everything is
 up and running.

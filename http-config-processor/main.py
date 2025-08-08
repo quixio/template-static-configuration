@@ -29,8 +29,8 @@ def config_apply(row: dict) -> dict:
     """
     print(row)
     for field_cfg in row.pop("configs"):
-        new_value = row.pop(field_cfg["field_id"]) * field_cfg["field_scalar"]
-        row[field_cfg["field_name"]] = new_value
+        if (value := field_cfg.get("field_id")):
+            row[field_cfg["field_name"]] = value * field_cfg["field_scalar"]
     return row
 
 

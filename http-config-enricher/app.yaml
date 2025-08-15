@@ -1,4 +1,4 @@
-name: HTTP Config Processor
+name: HTTP Config Enricher
 language: python
 variables:
   - name: input

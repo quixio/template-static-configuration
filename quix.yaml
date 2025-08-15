@@ -196,7 +196,7 @@ deployments:
         inputType: InputTopic
         description: This is the input topic
         required: true
-        value: config_processed_data
+        value: config_enriched_data
       - name: INFLUXDB_HOST
         inputType: FreeText
         description: Host address for the InfluxDB instance.
@@ -318,8 +318,8 @@ deployments:
         description: The auth token to access the Config UI.
         required: true
         secretKey: config_ui_auth_token
-  - name: HTTP Config Processor
-    application: http-config-processor
+  - name: HTTP Config Enricher
+    application: http-config-enricher
     version: latest
     deploymentType: Service
     resources:
@@ -334,7 +334,7 @@ deployments:
       - name: output
         inputType: OutputTopic
         description: Name of the output topic to write to.
-        value: config_processed_data
+        value: config_enriched_data
       - name: POSTGRES_HOST
         inputType: FreeText
         description: The PostgreSQL host to connect to.
@@ -369,5 +369,5 @@ topics:
     dataTier: Bronze
   - name: normalized_data
     dataTier: Silver
-  - name: config_processed_data
+  - name: config_enriched_data
     dataTier: Silver

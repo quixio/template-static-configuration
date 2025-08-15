@@ -140,7 +140,7 @@ This aggregation is done using a Quix Streams `tumbling_window` operation, found
 ### Applying a Printer Config
 
 Using the `Machine Config UI` service, you can set what values will be used by the 
-`HTTP Config Processor`.
+`HTTP Config Enricher`.
 
 #### Accessing the Machine Config UI
 
@@ -160,7 +160,7 @@ By default, these will be the settings:
 
 They can be added or changed by going to the UI and adjusting the values.
 
-The `HTTP Config Processor` will use these to convert the names of the fields using the
+The `HTTP Config Enricher` will use these to convert the names of the fields using the
 mapping specified here, and also apply the scalar to the given respective field.
 
 

@@ -24,7 +24,7 @@ if not st.session_state.authenticated:
             st.error("Incorrect password; try again")
     st.stop()
 else:
-    st.text("This shows the current configs used by `HTTP Config Processor`.")
+    st.text("This shows the current configs used by `HTTP Config Enricher`.")
     st.text("Edits take <=30 seconds to reflect in the Processor due to its TTL setting.")
 
     # Connect to DB and init if needed
